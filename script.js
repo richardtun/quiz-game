@@ -19,6 +19,11 @@ const questions = [
         question: "What is 2 + 2?",
         choices: ["3", "4", "5", "6"],
         answer: 1
+    },
+    {
+        question: "What is the football club of England?",
+        choices: ["PSG", "Barcelona", "Juventus", "Manchester United"],
+        answer: 3
     }
 ];
 
