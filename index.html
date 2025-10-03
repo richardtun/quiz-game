@@ -2,17 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple Quiz Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Quiz Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Quiz Game</h1>
-        <div id="question"></div>
-        <div id="choices"></div>
-        <button id="next-btn" style="display:none;">Next Question</button>
-        <div id="score"></div>
+    <div class="background-gradient"></div>
+    
+    <div class="quiz-wrapper">
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="20" r="18" stroke="url(#gradient)" stroke-width="3"/>
+                        <path d="M20 10 L20 20 L27 20" stroke="url(#gradient)" stroke-width="3" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea"/>
+                                <stop offset="100%" style="stop-color:#764ba2"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h1>Knowledge Quiz</h1>
+                <p class="subtitle">Test your knowledge across various topics</p>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-text" id="progress-text">Question 1 of 5</div>
+            </div>
+
+            <div class="score-badge" id="score-badge">
+                <div class="score-label">Score</div>
+                <div class="score-value" id="score-value">0</div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-number" id="question-number">Question 1</div>
+                <h2 class="question-text" id="question"></h2>
+            </div>
+
+            <div class="choices-container" id="choices"></div>
+
+            <button class="next-btn" id="next-btn">
+                <span>Next Question</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M7 4 L13 10 L7 16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <div class="result-container" id="result-container">
+                <div class="result-icon">🎉</div>
+                <h2 class="result-title">Quiz Completed!</h2>
+                <div class="result-score">
+                    <span class="result-score-text">Your Score</span>
+                    <span class="result-score-value" id="final-score">0/5</span>
+                </div>
+                <div class="result-message" id="result-message"></div>
+                <button class="restart-btn" id="restart-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M4 10 A6 6 0 1 1 10 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <path d="M4 10 L4 6 L8 6" fill="currentColor"/>
+                    </svg>
+                    <span>Restart Quiz</span>
+                </button>
+            </div>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
