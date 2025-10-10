@@ -74,6 +74,3 @@ Check out the live demo [here](https://quiz-game-vyf6.onrender.com/).
 ## Contributing
 Contributions are welcome! You can add new questions, improve UI/UX, or enhance security measures.
 ---
-## License
-Open-source and free for educational purposes.
-
