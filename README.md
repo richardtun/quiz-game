@@ -66,8 +66,6 @@ Check out the live demo [here](https://quiz-game-vyf6.onrender.com/).
 
 - **Add categories:** Separate `ques.json` files per category
 - **Timed quizzes:** Countdown timers with auto-next question
-## Feature Objects
-
 - **Leaderboard:** Store scores for multiple users
 - **Animations:** Smooth transitions on answer selection
 
